@@ -1,0 +1,5 @@
+# Ignore python environment
+env
+
+# Ignore vscode workspace settings
+.vscode
