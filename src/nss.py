@@ -48,6 +48,8 @@ for finding in findings:
             vulnTitle, vulnId, mg.classify_color(vulnSeverity), vulnDescription
         )
     )
+    
+    # TODO Perform Configuration Check with current vulnId
 
 # ! Testing Purposes (Remove later)
 # testJson = json.dumps(findings, indent=4)
