@@ -10,6 +10,7 @@ import modules.general as mg
 from colorama import Fore, Style
 import pathlib
 import netmiko as nm
+
 ROOTPATH = pathlib.Path(__file__).parent.resolve()
 MODULESPATH = str(ROOTPATH) + "\Modules"
 TARGET = "myTargetHost"
@@ -32,20 +33,21 @@ print(f"{Fore.CYAN}Released:{Fore.MAGENTA} {stigReleaseDate}{Style.RESET_ALL}\n"
 # connection = nm.ConnectHandler(ip=TARGET, device_type="cisco_ios", username=username, password=password)
 
 # * Output vuln currently being checked
-for i in range(len(findings)):
-    for finding in findings:
-        title = findings[finding]["title"]
-        vulnId = findings[finding]["id"]
-        severity = findings[finding]["severity"]
-        description = (
-            findings[finding]["description"]
-            .replace("\n\n", "")
-            .replace("\n", "")
-            .replace("  ", " ")
-        )  # Cleaning up output
-
-        if i == 0:
-            print(mg.display_stig(title, vulnId, mg.classify_color(severity), description))
+for finding in findings:
+    vulnTitle = findings[finding]["title"]
+    vulnId = findings[finding]["id"]
+    vulnSeverity = findings[finding]["severity"]
+    vulnDescription = (
+        findings[finding]["description"]
+        .replace("\n\n", "")
+        .replace("\n", "")
+        .replace("  ", " ")
+    )  # Cleaning up output
+    print(
+        mg.display_stig(
+            vulnTitle, vulnId, mg.classify_color(vulnSeverity), vulnDescription
+        )
+    )
 
 # ! Testing Purposes (Remove later)
 # testJson = json.dumps(findings, indent=4)
