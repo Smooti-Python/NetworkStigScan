@@ -9,10 +9,14 @@ import json
 import modules.general as mg
 from colorama import Fore, Style
 import pathlib
+import netmiko
 ROOTPATH = pathlib.Path(__file__).parent.resolve()
 MODULESPATH = str(ROOTPATH) + "\Modules"
-# Intake STIG JSON file
+TARGET = "myTargetHost"
+username = "myUsername"
+password = "myPassword"
 
+# Intake STIG JSON file
 with open(f"{ROOTPATH}/stigData.json") as file:
     data = json.load(file)
 
@@ -24,8 +28,10 @@ stigTitle = stig["title"]
 print(f"{Fore.CYAN}Currently Running Stig:{Fore.BLUE} {stigTitle}")
 print(f"{Fore.CYAN}Released:{Fore.MAGENTA} {stigReleaseDate}{Style.RESET_ALL}\n")
 
-# * Output vuln currently being checked
+# TODO Establish ssh connection
+connection = netmiko.ConnectHandler(ip=TARGET, device_type="cisco_ios", username=username, password=password)
 
+# * Output vuln currently being checked
 for i in range(len(findings)):
     for finding in findings:
         title = findings[finding]["title"]
