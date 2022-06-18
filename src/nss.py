@@ -9,7 +9,7 @@ import json
 import modules.general as mg
 from colorama import Fore, Style
 import pathlib
-import netmiko
+import netmiko as nm
 ROOTPATH = pathlib.Path(__file__).parent.resolve()
 MODULESPATH = str(ROOTPATH) + "\Modules"
 TARGET = "myTargetHost"
@@ -29,7 +29,7 @@ print(f"{Fore.CYAN}Currently Running Stig:{Fore.BLUE} {stigTitle}")
 print(f"{Fore.CYAN}Released:{Fore.MAGENTA} {stigReleaseDate}{Style.RESET_ALL}\n")
 
 # TODO Establish ssh connection
-connection = netmiko.ConnectHandler(ip=TARGET, device_type="cisco_ios", username=username, password=password)
+# connection = nm.ConnectHandler(ip=TARGET, device_type="cisco_ios", username=username, password=password)
 
 # * Output vuln currently being checked
 for i in range(len(findings)):
