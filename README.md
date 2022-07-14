@@ -13,7 +13,7 @@
 
 <!-- PROJECT LOGO -->
 <p align="center" style="text-align: center">
-	<a href="https://github.com/Smooti-PowerShell/SmootiTools">
+	<a href="https://github.com/smooti-python/NetworkStigScan">
 		<img src="./images/cyber-security.png" width="20%">
 	</a><br />
 </p>
@@ -23,28 +23,28 @@
 	NSS is a tool used to scan and configure network devices
 	<br /><br />
 	<!-- License shield -->
-	<a href="https://github.com/smooti-powershell/SmootiTools/blob/master/LICENSE">
-		<img src="https://img.shields.io/github/license/smooti-powershell/SmootiTools.svg?style=badge">
+	<a href="https://github.com/smooti-python/NetworkStigScan/blob/master/LICENSE">
+		<img src="https://img.shields.io/github/license/smooti-python/NetworkStigScan.svg?style=badge">
 	</a>
 	<!-- Contributors shield -->
-	<a href="https://github.com/smooti-powershell/SmootiTools/graphs/contributors">
-		<img src="https://img.shields.io/github/contributors/smooti-powershell/SmootiTools.svg?style=badge" />
+	<a href="https://github.com/smooti-python/NetworkStigScan/graphs/contributors">
+		<img src="https://img.shields.io/github/contributors/smooti-python/NetworkStigScan.svg?style=badge" />
 	</a>
 	<!-- Forks shield -->
-	<a href="https://github.com/smooti-powershell/SmootiTools/network/members">
-		<img src="https://img.shields.io/github/forks/smooti-powershell/SmootiTools.svg?style=badge" />
+	<a href="https://github.com/smooti-python/NetworkStigScan/network/members">
+		<img src="https://img.shields.io/github/forks/smooti-python/NetworkStigScan.svg?style=badge" />
 	</a>
 	<!-- Stars shield -->
-	<a href="https://github.com/smooti-powershell/SmootiTools/stargazers">
-		<img src="https://img.shields.io/github/stars/smooti-powershell/SmootiTools.svg?style=badge" />
+	<a href="https://github.com/smooti-python/NetworkStigScan/stargazers">
+		<img src="https://img.shields.io/github/stars/smooti-python/NetworkStigScan.svg?style=badge" />
 	</a>
 	<!-- Contributions shield -->
-	<a href="https://github.com/smooti-powershell/SmootiTools/issues">
+	<a href="https://github.com/smooti-python/NetworkStigScan/issues">
 		<img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" />
 	</a>
 	<!-- Issues Shield -->
-	<a href="https://github.com/smooti-powershell/SmootiTools/issues">
-		<img src="https://img.shields.io/github/issues/smooti-powershell/SmootiTools.svg?style=badge" />
+	<a href="https://github.com/smooti-python/NetworkStigScan/issues">
+		<img src="https://img.shields.io/github/issues/smooti-python/NetworkStigScan.svg?style=badge" />
 	</a>
 	<!-- Linkedin shield -->
 	<a href="https://www.linkedin.com/in/robertowens01/">
@@ -55,9 +55,9 @@
 <span id="nav-1"></span>
 
 <p align="center">
-	<a href="https://github.com/Smooti-PowerShell/SmootiTools/issues">Report Bug</a>
+	<a href="https://github.com/smooti-python/NetworkStigScan/issues">Report Bug</a>
 	·
-	<a href="https://github.com/Smooti-PowerShell/SmootiTools/issues">Request Feature</a>
+	<a href="https://github.com/smooti-python/NetworkStigScan/issues">Request Feature</a>
 </p>
 
 <!-- TABLE OF CONTENTS -->
